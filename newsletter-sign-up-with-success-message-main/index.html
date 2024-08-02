@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +15,13 @@
   </head>
   <body class="background">
     <div class="card">
+      <div class="card__img-mobile">
+        <img
+          class="card__img-mobile"
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="illustrations showing charts"
+        />
+      </div>
       <div class="card__text">
         <h1 class="card__heading">Stay updated!</h1>
         <p class="card__paragraph">
@@ -28,7 +36,7 @@
           </li>
           <li class="card__list-item">And much more!</li>
         </ul>
-        <form action="success.html">
+        <form action="success.html" id="form">
           <label for="email">Email address</label>
           <div>
             <input
@@ -46,8 +54,11 @@
           </div>
         </form>
       </div>
-      <div class="card__img">
-        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+      <div class="card__img-desktop">
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="illustrations showing charts"
+        />
       </div>
     </div>
   </body>

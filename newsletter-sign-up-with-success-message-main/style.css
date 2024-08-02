@@ -128,10 +128,15 @@ body {
   justify-content: center;
   padding-left: 2rem;
   margin-right: 4rem;
+  width: 50%;
+}
+
+.card__img {
+  width: 50%;
 }
 
 .card__heading {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 5.5vw, 3.5rem);
   margin-bottom: 1rem;
 }
 
@@ -175,4 +180,38 @@ body {
   background-color: var(--Dark-Slate-Grey);
   color: var(--White);
   border: none;
+}
+
+/* Media qurries */
+
+.card__img-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .card__text {
+    width: 100%;
+  }
+
+  .card__img-desktop {
+    display: none;
+  }
+
+  .card__img-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .card__text {
+    padding: 2rem 1rem;
+    margin: 0;
+  }
 }
