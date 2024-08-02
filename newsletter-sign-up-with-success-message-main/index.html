@@ -5,11 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="background">
     <div class="card">
-      <div class="card__text"></div>
-      <div class="card__img"></div>
+      <div class="card__text">
+        <h1 class="card__heading">Stay updated!</h1>
+        <p class="card__paragraph">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="card__list">
+          <li class="card__list-item">
+            Product discovery and building what matters
+          </li>
+          <li class="card__list-item">
+            Measuring to ensure updates are a success
+          </li>
+          <li class="card__list-item">And much more!</li>
+        </ul>
+        <form action="success.html">
+          <label for="email">Email address</label>
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="email@company.com"
+            />
+          </div>
+          <div>
+            <button type="submit" id="button">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="card__img">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
     </div>
   </body>
 </html>
