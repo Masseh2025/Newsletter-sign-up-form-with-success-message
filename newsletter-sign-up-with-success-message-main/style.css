@@ -251,3 +251,53 @@ body {
   background-color: hsla(4, 100%, 67%, 0.3);
   border: 1px solid var(--Tomato) !important;
 }
+
+/* success page */
+
+.card--success {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1.5em;
+  max-width: 500px;
+  margin: 1rem;
+}
+
+#dismiss-button {
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  border: none;
+  outline: none;
+  margin-top: 0.5rem;
+  padding: 1em 1.5em;
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+#dismiss-button:focus,
+#dismiss-button:hover {
+  background-color: var(--Tomato);
+  color: var(--White);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card__success-image {
+  margin-bottom: 1rem;
+}
+
+.card__success-heading {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+  .card--success {
+    border-radius: 0;
+    margin: 0;
+    height: 100vh;
+  }
+
+  #dismiss-form {
+    margin-top: auto;
+  }
+}
