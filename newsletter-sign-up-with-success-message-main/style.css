@@ -123,6 +123,7 @@ body {
 }
 
 .card__text {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,12 +175,14 @@ body {
 #email {
   margin-bottom: 1rem;
   border: 1px solid var(--Grey);
+  outline: none;
 }
 
 #button {
   background-color: var(--Dark-Slate-Grey);
   color: var(--White);
   border: none;
+  outline: none;
 }
 
 /* Media qurries */
@@ -214,4 +217,37 @@ body {
     padding: 2rem 1rem;
     margin: 0;
   }
+}
+
+/* hover and focus states for inputs/buttons */
+
+#email:focus,
+#email:hover {
+  border: 1px solid var(--Dark-Slate-Grey);
+}
+
+#button:focus,
+#button:hover {
+  background-color: var(--Tomato);
+  color: var(--White);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Js */
+
+#error {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  color: var(--Tomato);
+  display: none;
+}
+
+.visible {
+  display: inline-block !important;
+}
+
+.red {
+  background-color: hsla(4, 100%, 67%, 0.3);
+  border: 1px solid var(--Tomato) !important;
 }
